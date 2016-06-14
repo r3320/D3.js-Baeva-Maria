@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://d3js.org/d3.v3.min.js"> </script>
+
+<body>
+ 
+<script type="text/javascript">
+var height = 240, 
+    width = 450, 
+    data=[
+        {browser: "Google Chrome", rate: 45},
+        {browser: "Firefox", rate: 15},
+        {browser: "Opera", rate: 25},
+        {browser: "Yandex Browser", rate: 5},
+        {browser: "Internet Explorer", rate: 10}
+    ];
+     
+// функция для получения цветов
+var color = d3.scale.category20();
+ 
+// задаем радиус
+var radius = 120;
+ 
+// создаем элемент арки с радиусом
+var arc = d3.svg.arc()
+    .innerRadius(radius-60)
+    .outerRadius(radius);
+     
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function(d) { return d.rate; });
+ 
+var svg = d3.select("body").append("svg")
+        .attr("class", "axis")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", 
+            "translate(" +(width / 2) + "," + (height / 2 ) + ")");
+    
+var g = svg.selectAll(".arc")
+.data(pie(data))
+.enter().append("g")
+.attr("class", "arc");  
+ 
+g.append("path")
+.attr("d", arc)
+.style("fill", function(d) { return color(d.data.browser); });
+</script>
+</body>
+</html>

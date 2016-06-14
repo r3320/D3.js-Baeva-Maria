@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>D3.js Задание3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://webfonts.ru/import/gardensc.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+            <p class="title">D3.js Задание 3</p>
+    </header>
+    <div class="container">
+        <div class="left">
+            <div class="task">
+                <span class="label">Задание</span>
+                <p>Нажми на кнопку "Запустить JS".</p>
+                <p>Измени внутренний радиус и проценты так, что результат совпал с образцом. Все значения кратны 5.
+                </p>
+            </div>
+            <div class="sample">
+                <span class="label sample-label">
+                    <a class="sample-button" href="javascript:SampleShow()">Образец</a>
+                    <a class="diff-button" href="javascript:DiffShow()">Различия</a>
+                </span>
+                <iframe id="sample-frame" frameborder="0">
+                </iframe>
+                <div id="diff"></div>
+            </div>
+            <div class="result">
+                <span class="label">Результат</span>
+                 <iframe id="result-frame" frameborder="0">
+                </iframe>
+            </div>
+        </div>
+        <div class="right">
+            <span class="label">JavaScript 1</span>
+            <div class="editor JS-editor1">
+            </div>
+            <span class="label JS2-label">JavaScript 2</span>
+            <div class="editor JS-editor2">
+            </div>
+        </div>
+        <div class="button-panel">
+                <a href="javascript:PopUpShow()">Теория</a>
+                <input id="elem" type="button" value="Запуск JS" />
+                <button class="check" id="checking">Проверка</button>
+                <div id="check-percent">
+                    <p>Совпадение</p>
+                    <div id="container"></div>
+                </div>
+                <a href="page2.html"class="next" id="next">Следующее задание</a>
+        </div>
+    </div>
+    <div class="b-popup" id="popup1"> 
+        <div class="b-popup-content">
+            <span class="label">Теория</span>
+            <h3>Круговые диаграммы.</h3>
+            <p>В магазине продают несколько видов сладостей: ириски, леденцы, мармелад, пастила и батончики. Их процентное соотношение показано на круговой диаграмме.</p>
+            <p>Чтобы получить диаграмму в виде бублика, как в данном случае, необходимо указать innerRadius > 0 (внутренний радиус).</p>
+            <p>Твоя задача в этом задании указать правильный внутренний радиус и значения количества конфет в процентах.</p>
+        <a href="javascript:PopUpHide()" class="close-theory">Закрыть</a>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script src="js/window.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/resemble.js"></script>
+    <script src="js/progressbar.js-master/dist/progressbar.js"></script>
+    <script src="js/check3.js"></script>
+</body>
+</html>

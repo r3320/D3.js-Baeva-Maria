@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<script src="http://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+<script>
+
+var svg = d3.select("body").append("svg")
+    .attr("width",450)
+    .attr("height", 240);
+
+svg.append("circle")
+    .attr("cx", 165)
+    .attr("cy", 90)
+    .attr("r", 90)
+    .style("fill", "brown")
+    .style("fill-opacity", ".5");
+
+svg.append("circle")
+    .attr("cx", 265)
+    .attr("cy", 90)
+    .attr("r", 90)
+    .style("fill", "steelblue")
+    .style("fill-opacity", ".5");
+
+svg.append("circle")
+    .attr("cx", 215)
+    .attr("cy", 140)
+    .attr("r", 90)
+    .style("fill", "green")
+    .style("fill-opacity", ".5");
+
+</script>

@@ -1,0 +1,254 @@
+
+                    p{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-weight: normal;
+    font-size: 13.3px;
+}
+
+body {
+    background-image: url(images/background5.png);
+    margin: 0;
+    font-family: 'GardensC';
+    font-size: 16px;
+}
+
+header, footer {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 8.33%;
+    background-image: url(images/background2.png);
+    background-repeat: repeat-x;
+    background-size: 200px;
+    opacity: 0.8;
+    box-shadow: 4px 6px 19px 1px #a3bcc4;
+}
+
+header p, footer p {
+    display: inline-block;
+}
+
+p.title {
+    font-size: 45px;
+}
+
+footer {
+    box-shadow: 4px -6px 19px 1px #a3bcc4;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.left div, .b-popup-content {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    width: 600px;
+    margin: 20px;
+}
+
+.sample, .result, .b-popup-content {
+    height: 290px;
+    margin-bottom: 15px;
+    border: 2px solid #3DCDB5;
+    box-shadow: 4px 6px 19px 1px #a3bcc4;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.task {
+    height: 150px;
+    margin-bottom: 15px;
+    border: 2px solid #3DCDB5;
+    box-shadow: 4px 6px 19px 1px #a3bcc4;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.task p {
+    margin: 10px;
+}
+
+.editor {
+    height: 343px;
+    width: 465px;
+    border: 2px solid #3DCDB5;
+    box-shadow: 4px 6px 19px 1px #a3bcc4;
+    background-color: white;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 30px;
+    opacity: 0.9;
+}
+
+.label {
+    display: block;
+    background-color: #3DCDB5;
+    width: auto;
+    border-top-right-radius: 28px;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 1px 1px 30px 1px #2b899e inset;
+    opacity: 0.95;
+}
+
+.sample-label {
+    padding: 10px 5px;
+}
+
+.JS2-label {
+    margin-top: 365px;
+}
+
+.JS-editor1 { 
+    position: absolute;
+}
+
+.JS-editor2 { 
+    margin-top: 48px;
+    position: absolute;
+    top: 510px;
+}
+
+.button-panel {
+    width: 160px;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.button-panel button, #elem, .button-panel a, a.close-theory {
+    width: 140px;
+    text-align: center;
+    border: none;
+    font-weight: 700;
+    color: white;
+    font-family: 'GardensC';
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 0px;
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    margin-bottom: 15px;
+}
+
+.sample-button, .diff-button {
+    text-align: center;
+    border: none;
+    color: white;
+    font-family: 'GardensC';
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background: rgb(64,199,129);
+}
+
+#check-percent {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #000;
+    box-shadow: 4px 6px 19px 1px #a3bcc4;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    opacity: 0.8;
+}
+
+#container {
+    margin: 15px;
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+button:hover, a:hover { 
+    background: rgb(53, 167, 110); 
+}
+
+button:active, a:active {
+    border: none;
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+#result-frame, #sample-frame, #diff {
+    width: 468px;
+    height: 260px;
+}
+
+#diff {
+    border-radius: 0;
+}
+
+.b-popup{
+    overflow:hidden;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.b-popup .b-popup-content{
+    position: absolute;
+    width:490px;
+    min-height:380px;
+    top:128px;
+    left: 600px;
+}
+
+.b-popup-content {
+    padding: 20px 0px;
+    padding-top: 0; 
+    padding-bottom: 60px;
+}
+
+.b-popup-content p{
+    padding: 5px 20px;
+}
+
+h3 {
+    padding-left: 20px;
+}
+
+p.code {
+    margin-left: 15px;
+}
+.close-theory {
+    position: absolute;
+    bottom: 0px;
+    right: 190px;
+}
+
+footer {
+    min-height: 50px;
+}
+
+
+

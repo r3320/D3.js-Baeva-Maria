@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>D3.js Задание1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://webfonts.ru/import/gardensc.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+            <p class="title">D3.js Задание 1</p>
+    </header>
+    <div class="container">
+        <div class="left">
+            <div class="task">
+                <span class="label">Задание</span>
+                <p>Нажми на кнопку "Запустить JS" и посмотри на результат.</p>
+                <p>Затем измени массив в редакторе JavaScript 2 таким образом, чтобы он совпал с образцом.</p>
+            </div>
+            <div class="sample">
+                <span class="label sample-label">
+                    <a class="sample-button" href="javascript:SampleShow()">Образец</a>
+                    <a class="diff-button" href="javascript:DiffShow()">Различия</a>
+                </span>
+                <iframe id="sample-frame" frameborder="0">
+                </iframe>
+                <div id="diff"></div>
+            </div>
+            <div class="result">
+                <span class="label">Результат</span>
+                 <iframe id="result-frame" frameborder="0" src="">
+                </iframe>
+            </div>
+        </div>
+        <div class="right">
+            <span class="label">JavaScript 1</span>
+            <div class="editor JS-editor1">
+            </div>
+            <span class="label JS2-label">JavaScript 2</span>
+            <div class="editor JS-editor2">
+            </div>
+        </div>
+        <div class="button-panel">
+                <a class="open-theory" href="javascript:PopUpShow()">Теория</a>
+                <input id="elem" type="button" value="Запуск JS" />
+                <button class="check" id="checking">Проверка</button>
+                <div id="check-percent">
+                    <p>Совпадение</p>
+                    <div id="container"></div>
+                </div>
+                <a href="page2.html" class="next" id="next">Следующее задание</a>
+        </div>
+    </div>
+    <div class="b-popup" id="popup1"> 
+        <div class="b-popup-content">
+            <span class="label">Теория</span>
+            <h3>Гистограммы</h3>
+            <p>Привет! Сегодня мы поговорим немного о D3.js.</p>
+            <p>D3.js это JavaScript-библиотека для обработки и визуализации данных. Она предоставляет удобные утилиты для обработки и загрузки массивов данных и создания DOM-элементов.</p>
+            <p>Для начала рассмотрим игистограммы. Гистограммы отображают данные в виде столбиков.</p>
+            <p>В редакторе JavaScript 2 нужно изменить массив так, чтобы он совпал с образцом.</p>
+        <a href="javascript:PopUpHide()" class="close-theory">Закрыть</a>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script src="js/window.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/resemble.js"></script>
+    <script src="js/progressbar.js-master/dist/progressbar.js"></script>
+    <script src="js/check1.js"></script>
+</body>
+</html>
